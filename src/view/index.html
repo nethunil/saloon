@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/styles.css">
+    <title>Saloon ABC</title>
+</head>
+<body>
+    <div>
+        <img src="/src/images/logo.jpg" class="logo" alt="">        
+        <a class="Com_Name" href="">Saloon ABC</a>
+        <a class="home" href="">Home</a>
+        <a class="about" href="#aboutUs">About</a>
+        <a class="services" href="#servicesList">Services</a>
+        <a class="shop" href="">Shop</a>
+        <a class="bookNow" href="/src/view/booking.html">Book Now</a>        
+      </div>  
+      <div class="pic1">
+        <img class="pic1" src="/src/images/salon-wallpaper.jpg" alt="">
+      </div>
+      <p class="mainTitle">Always make room for beauty in your life</p>
+      <p class="subTitle">At Prauge we are passionate about making people feel good while looking their best. Attending advanced education allows us to keep up with the latest trends and provide each guest with a unique & customizable result. For your convenience, Schedule your reservation today!</p>
+      <button class="mainbookNow" id="mainbookNow">Book Now</button>
+
+      <div id="servicesList">
+        <h1>Services</h1>
+        <div class="servicesList">
+          <a href="/src/view/haircut.html">
+          <img src="/src/images/haircut.jpg" alt="" width="300px" height="200px">
+          <h5>Hair Cut</h5>
+          <h6>At Prauge we are passionate about making people feel good while looking their best. Attending advanced education allows us to...</h6>
+          </a>
+          <button class="ResButInServ" id="toServ1">MAKE A RESERVATION</button>
+        </div>
+        <div class="servicesList">
+          <a href="/src/view/hairStyling.html">
+          <img src="/src/images/hairstyling.jfif" alt="" width="300px" height="200px">
+          <h5>Hair styling</h5>
+          <h6>At Prauge we are passionate about making people feel good while looking their best. Attending advanced education allows us to...</h6>
+          </a>
+          <button class="ResButInServ" id="toServ2">MAKE A RESERVATION</button>
+        </div>
+        <div class="servicesList">
+          <a href="/src/view/makeup.html" >
+          <img src="/src/images/makeup.jfif" alt="" width="300px" height="200px">
+          <h5>Makeup</h5>
+          <h6>At Prauge we are passionate about making people feel good while looking their best. Attending advanced education allows us to...</h6>
+          </a>
+          <button class="ResButInServ" id="toServ3">MAKE A RESERVATION</button>              
+        </div>         
+      </div>
+      <button class="ResButInServ" id="toServ3">MAKE A RESERVATION</button>              
+
+      <div id="aboutUs">
+        <h1>About us</h1>
+        <p class="aboutUs">Named “Best Salon” by Main Line Magazine & The Philadelphia Inquirer, Prauge Salon & Style Bar has been committed to “raising the bar ” since opening our doors in 2014. Our mission is simple, give every guest an excellent experience by providing them with a warm, inviting culture & results that surpass expectations. At Privé we are passionate about making people feel good while looking their best. Attending advanced education allows us to keep up with the latest trends and provide each guest with a unique & customizable result. For your convenience, we are open 7 days a week & offers online booking 24 hours a day. <br><h4>Schedule your reservation today!</h4></p>
+      </div>
+
+      <script>
+          document.getElementById("mainbookNow").onclick = function () {
+          location.href = "/src/view/booking.html" ;
+          };     
+          document.getElementById("toServ1").onclick = function () {
+            location.href = `/src/view/booking.html?amountType=${"Hair_Cut"}` ;
+          }
+          document.getElementById("toServ2").onclick = function () {
+            location.href = `/src/view/booking.html?amountType=${"Hair_Styling"}` ;
+          }
+          document.getElementById("toServ3").onclick = function () {
+            location.href = `/src/view/booking.html?amountType=${"Makeup"}` ;
+          }
+      </script>
+</body>
+</html>

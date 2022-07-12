@@ -1,0 +1,574 @@
+.bookNow{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    text-decoration: none;
+
+    position: absolute;
+    width: 163px;
+    height: 53px;
+    left: 1165px;
+    top: 19px;
+    
+    padding: 16px 48px;
+    gap: 10px;
+
+    background: #000000;
+    border-radius: 5px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    width: 67px;
+    height: 21px;    
+        
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+        
+    color: #FFFFFF;    
+}
+
+.logo{
+    position: absolute;
+    left: 40px;
+    top: 23px;
+
+    height: 50px;
+    width: 50px;
+}
+
+.Com_Name{
+    /* Com_Name position */
+    position: absolute;
+    left: 110px;
+    top: 25px;
+
+    /* Body */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 150%;
+    text-decoration: none;
+    /* identical to box height, or 21px */
+
+    /* Black */
+    color: #000000;  
+}
+
+.home{
+    /* Home position */
+    position: absolute;
+    width: 42px;
+    height: 21px;
+    left: 755px;
+    top: 35px;
+
+    /* Body */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 150%;
+    text-decoration: none;
+    /* identical to box height, or 21px */
+
+    /* Black */
+    color: #000000;
+}
+
+.about{
+    /* About position */
+    position: absolute;
+    width: 42px;
+    height: 21px;
+    left: 859px;
+    top: 35px;
+
+    /* Body */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 150%;
+    text-decoration: none;
+    /* identical to box height, or 21px */
+
+
+    /* Black */
+    color: #000000;
+}
+
+.services{
+    /* services position */
+    position: absolute;
+    width: 58px;
+    height: 21px;
+    left: 963px;
+    top: 35px;
+
+    /* Body */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 150%;
+    text-decoration: none;
+    /* identical to box height, or 21px */
+
+
+    /* Black */
+    color: #000000;
+    }
+
+.shop{
+    /* Shop position */
+    position: absolute;
+    width: 36px;
+    height: 21px;
+    left: 1067px;
+    top: 35px;
+
+    /* Body */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 150%;
+    text-decoration: none;
+    /* identical to box height, or 21px */
+
+    /* Black */
+    color: #000000;
+}
+
+.pic1{
+    left: 0px;
+    top: 50px;
+    position: absolute;
+    width: 1350px;
+    height: 600px;
+    
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #020202 100%);
+}
+
+.mainTitle{
+    position: absolute;
+    width: 481px;
+    height: 100px;
+    left: 110px;
+    top: 200px;
+
+    /* Header 1 */
+
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 99%;
+    /* or 50px */
+
+    letter-spacing: -0.03em;
+
+    /* Pearl White */
+    color: #FFFFFF;
+}
+
+.subTitle{
+    position: absolute;
+    width: 521px;
+    height: 118px;
+    left: 110px;
+    top: 370px;
+
+    /* Body */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    /* or 21px */
+
+    color: #FFFFFF;
+
+}
+
+.mainbookNow{
+    position: absolute;
+    width: 167px;
+    height: 51px;
+    left: 110px;
+    top: 560px;
+
+    border: 1.5px solid #FFFFFF;
+    border-radius: 5px; 
+    background-color: transparent;
+    color: white;
+    font-size: 15px;
+}
+
+#servicesList{
+    text-align: center;
+    position: relative;
+    top: 700px;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.servicesList{
+    float: left;
+    width: 25%;
+    margin-left:55px;
+    margin-right:20px;
+    padding: 10px;
+    height: 200px;  
+    font-size: 15px;  
+    text-align: left;    
+}
+
+.serButton{
+    position:fixed;
+    text-align: center;
+    position: relative;
+    top: 700px;
+    font-size: 30px;
+    text-decoration: none;
+    background-color: tra;
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+}
+
+h5{
+    font-size: 25px;
+    margin-bottom: -25px;
+}
+
+h6{
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.ResButInServ{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    
+    color: #B99A5F;
+    border-color: transparent;
+    background-color: transparent;
+}
+
+#aboutUs{
+    text-align: center;
+    position: relative;
+    top: 1000px;
+    font-size: 30px;
+}
+
+.aboutUs{
+    font-size: 20px;
+    font: optional;
+    padding-left: 130px;
+    padding-right: 130px;
+    line-height: 30px;
+}
+
+h4{
+    color: #946919;
+    padding-bottom: 50px;
+}
+
+/* Booking Page CSS */
+
+.picB{
+    position: absolute;
+    width: 700px;
+    height: 680px;
+    left: 635px;
+    top: 90px;    
+}
+
+.headerB{
+    /* Booking details */
+    position: absolute;
+    width: 332px;
+    height: 50px;
+    left: 108px;
+    top: 130px;
+
+    /* Header 1 */
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 99%;
+    /* identical to box height, or 50px */
+    letter-spacing: -0.03em;
+
+    /* Black */
+    color: #000000;
+}
+
+#services{
+    position: absolute;
+    width: 457px;
+    height: 50px;
+    left: 108px;
+    top: 250px;
+
+    /* Header 1 */
+    font-family: 'Playfair Display';
+    font-style: normal;    
+    
+    color: #000000;
+
+    box-sizing: border-box;
+    /* Overcast */
+
+    border: 1.5px solid #A5A5A5;
+    border-radius: 5px;
+}
+
+#fName{
+    position: absolute;
+    width: 450px;
+    height: 50px;
+    left: 108px;
+    top: 315px;
+    border: 1.5px solid #A5A5A5;
+    border-radius: 5px;
+}
+
+#lName{
+    position: absolute;
+    width: 450px;
+    height: 50px;
+    left: 108px;
+    top: 380px;
+    border: 1.5px solid #A5A5A5;
+    border-radius: 5px;
+}
+
+#email{
+    position: absolute;
+    width: 450px;
+    height: 50px;
+    left: 108px;
+    top: 445px;
+    border: 1.5px solid #A5A5A5;
+    border-radius: 5px;
+}
+
+#date{
+    position: absolute;
+    width: 225px;
+    height: 50px;
+    left: 108px;
+    top: 510px;
+    border: 1.5px solid #A5A5A5;
+    border-radius: 5px;
+}
+
+#time{
+    position: absolute;
+    width: 210px;
+    height: 50px;
+    left: 350px;
+    top: 510px;
+    border: 1.5px solid #A5A5A5;
+    border-radius: 5px;
+}
+
+.amount{
+    font-size: 50px;
+    position: absolute;
+    width: 450px;
+    height: 50px;
+    left: 108px;
+    top: 550px;
+}
+
+.submit{
+    position: absolute;
+    width: 250px;
+    height: 50px;
+    left: 108px;
+    top: 720px;
+
+    background: #B99A5F;
+    border-radius: 5px;  
+    font-size: 20px;  
+}
+
+
+/* Services Pages */
+
+.SerHead{
+    position: absolute;
+    width: 332px;
+    height: 50px;
+    left: 108px;
+    top: 230px;
+
+    /* Header 1 */
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 99%;
+    /* identical to box height, or 50px */
+
+    letter-spacing: -0.03em;
+
+    color: #000000;
+}
+
+.serDetails{
+    position: absolute;
+    width: 419px;
+    height: 118px;
+    left: 108px;
+    top: 350px;
+
+    /* Body */
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    /* or 21px */
+
+
+    /* Black */
+
+    color: #000000;
+}
+
+.reservation{
+    position: absolute;
+    width: 200px;
+    height: 51px;
+    left: 110px;
+    top: 500px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+
+    background: #000000;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+}
+
+
+/* Thank You Page */
+
+h3{
+    position: absolute;
+    width: 675px;
+    height: 50px;
+    left: 383px;
+    top: 102px;
+
+    /* Header 1 */
+
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 99%;
+    /* identical to box height, or 50px */
+
+    text-align: center;
+    letter-spacing: -0.03em;
+
+    color: #000000;
+}
+
+.thankyou{
+    position: absolute;
+    width: 803px;
+    height: 218px;
+    left: 318px;
+    top: 220px;
+
+    /* Body */
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    /* or 21px */
+
+    text-align: center;
+
+    /* Black */
+
+    color: #000000;
+}
+
+.furtherMore{
+    position: absolute;
+    width: 803px;
+    height: 218px;
+    left: 318px;
+    top: 290px;
+
+    /* Body */
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    /* or 21px */
+
+    text-align: center;
+    color: #B99A5F;
+}
+
+.cont{
+    position: absolute;
+    width: 268px;
+    height: 20px;
+    left: 586px;
+    top: 420px;
+
+    /* Body Titles */
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 99%;
+    /* identical to box height, or 20px */
+
+    text-align: center;
+    letter-spacing: -0.03em;
+
+    /* Overcast */
+
+    color: #A5A5A5;
+}
+
+.phoneImg{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 705px;
+    top: 390px;
+}

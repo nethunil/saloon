@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/styles.css">
+    <title>Makeup</title>
+</head>
+<body>
+    <div>  
+        <img src="/src/images/logo.jpg" class="logo" alt="">       
+        <<a class="Com_Name" href="/src/view/index.html">Saloon ABC</a>
+        <a class="home" href="/src/view/index.html">Home</a>
+        <a class="about" href="/src/view/index.html#aboutUs">About</a>
+        <a class="services" href="/src/view/index.html#servicesList">Services</a>
+        <a class="shop" href="">Shop</a>
+        <a class="bookNow" href="/src/view/booking.html">Book Now</a>        
+    </div>
+      <img class="picB" src="/src/images/makeup.jfif" alt="">   
+      <p class="SerHead">Makeup</p>
+      <p class="serDetails">At Prauge we are passionate about making people feel good while looking their best. Attending advanced education allows us to keep up with the latest trends and provide each guest with a unique & customizable result. For your convenience, Schedule your reservation today!</p> 
+      <button class="reservation" id="reservMakeup">Make a Reservation</button>
+
+    <script>
+        document.getElementById("reservMakeup").onclick = function () {
+        location.href = `/src/view/booking.html?amountType=${"Makeup"}` ;  
+        }; 
+    </script>
+</body>
+</html>

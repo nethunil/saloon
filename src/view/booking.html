@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/styles.css">
+    <title>Reservation</title>
+</head>
+<body>
+    <div>      
+        <img src="/src/images/logo.jpg" class="logo" alt="">   
+        <a class="Com_Name" href="/src/view/index.html">Saloon ABC</a>
+        <a class="home" href="/src/view/index.html">Home</a>
+        <a class="about" href="/src/view/index.html#aboutUs">About</a>
+        <a class="services" href="/src/view/index.html#servicesList">Services</a>
+        <a class="shop" href="">Shop</a>
+        <a class="bookNow" href="">Book Now</a>        
+    </div>
+      <img class="picB" src="/src/images/Reservation.jpg" alt="">
+    <div>
+        <h1 class="headerB">Booking Details</h1>
+        <select class="services" name="services" id="services">
+            <option value="0" disabled selected hidden>Select Service</option>
+            <option value="Hair_Cut">Hair Cut</option>
+            <option value="Hair_Styling">Hair Styling</option>
+            <option value="Makeup">Makeup</option>
+        </select>
+        <input type="text" name="fName" id="fName" placeholder="  Enter Your First Name">
+        <input type="text" name="lName" id="lName" placeholder="  Enter Your last Name">
+        <input type="email" name="email" id="email" placeholder="  Enter Your email">
+        <input type="date" name="date" id="date" >
+        <input type="time" name="time" id="time" >
+        <p id="amount" class='amount'>USD 0.00</p>
+
+        <button class="submit" id="submit">Book Now</button>
+        <script>
+            const urlPararm = new URLSearchParams(window.location.search);
+            var select = document.getElementById('services');
+            
+            select.addEventListener('change', function handleChange(event) {                
+            var value = select.options[select.selectedIndex].value;                        
+            func1(value);
+            });
+            const makeupType = urlPararm.get("amountType");      
+            if(makeupType){
+                select.value = makeupType;  
+                func1(makeupType);                  
+            }
+            function func1(value){
+                var dAmount = document.getElementById('amount');
+                if(value=="Hair_Cut"){
+                    dAmount.innerHTML = "USD 25.00"
+                }else if(value=="Hair_Styling"){
+                    dAmount.innerHTML = "USD 30.00"
+                }else if(value=="Makeup"){
+                    dAmount.innerHTML = "USD 42.00"
+                }
+            }
+            document.getElementById("submit").onclick = function (ev) {   
+                
+                ev.preventDefault();
+                let detailsAdd = {
+                    service: document.getElementById('services').value,
+                    fName: document.getElementById('fName').value,
+                    lName: document.getElementById('lName').value,
+                    email: document.getElementById('email').value,
+                    date: document.getElementById('date').value,
+                    time: document.getElementById('time').value,
+                }                
+                
+                
+                fetch('http://localhost:3000/api/reservation',{
+                    headers: {
+                        'Accept': 'application/json',
+                        'Content-Type': 'application/json'
+                    },
+                    method: 'POST',
+                    body: JSON.stringify(detailsAdd)
+                })
+                .then(res => res.json())
+                .then(addDetails => console.log(addDetails))           
+                                                            
+                location.href = "/src/view/thankyou.html" ;                
+            }
+        </script>
+    </div>
+</body>
+</html>
